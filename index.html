@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JorneyHack — Твой софт здесь</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Основные стили (Тёмная тема) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117; /* Тёмный фон как у GitHub */
+            color: #c9d1d9;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Контейнер по центру */
+        .container {
+            text-align: center;
+            background: rgba(22, 27, 34, 0.8);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #30363d;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            width: 90%;
+        }
+
+        /* Заголовок с градиентом */
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #1f6feb, #58a6ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            color: #8b949e;
+            margin-bottom: 30px;
+        }
+
+        /* Стиль красивой кнопки */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px; /* Отступ между иконкой и текстом */
+            background-color: #238636; /* Зелёный цвет */
+            color: white;
+            padding: 18px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 4px 15px rgba(35, 134, 54, 0.4);
+        }
+
+        /* Эффект при наведении на кнопку */
+        .btn:hover {
+            background-color: #2ea44f;
+            transform: translateY(-3px); /* Кнопка чуть всплывает */
+            box-shadow: 0 6px 20px rgba(35, 134, 54, 0.6);
+        }
+
+        /* Нижний текст */
+        .footer-text {
+            font-size: 0.85em;
+            margin-top: 40px;
+            border-top: 1px solid #30363d;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>JorneyHack</h1>
+        <p>Нажми кнопку ниже, чтобы получить последнюю версию.</p>
+        
+        <a href="your_program.zip" download class="btn">
+            <i class="fas fa-download"></i> Скачать бесплатно
+        </a>
+
+        <div class="footer-text">
+            Версия 1.0.0 | Только для Windows
+        </div>
+    </div>
+
+</body>
+</html>
